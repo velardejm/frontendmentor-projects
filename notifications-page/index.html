@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Notifications page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="public/style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="notifications-container" id="notifications-container">
+
+    <div class="notif-header">
+      <h1 class="notif-header__notifications">Notifications <a href="#" class="notif-header__count">3</a></h1>
+      <p class="notif-header__read">
+        <a href="#">Mark all as read</a>
+      </p>
+    </div>
+
+    <!-- NOTIF ROW 1 -->
+    <div class="notif-row notif-row--new">
+      <a href="#"><img class="notif-row__avatar" src="assets/images/avatar-mark-webber.webp" alt=""></a>
+      <div class="notif-row__notif">
+        <p>
+          <a href="#" class="notif-row__name">Mark Webber</a> reacted to your recent post
+          <a href="#" class="notif-row__post">My first tournament today!</a>
+          <span class="notif-row__dot"></span>
+        </p>
+        <p>1m ago</p>
+      </div>
+    </div> <!-- </div> END OF NOTIF ROW 1 -->
+
+    <!-- NOTIF ROW 2 -->
+    <div class="notif-row notif-row--new">
+      <a href="#"><img class="notif-row__avatar" src="assets/images/avatar-angela-gray.webp" alt=""></a>
+      <div class="notif-row__notif">
+        <p>
+          <a href="#" class="notif-row__name">Angela Gray</a> followed you
+          <span class="notif-row__dot"></span>
+        </p>
+        <p>5m ago</p>
+      </div>
+    </div> <!-- </div> END OF NOTIF ROW 2 -->
+
+    <!-- NOTIF ROW 3 -->
+    <div class="notif-row notif-row--new">
+      <a href="#"><img class="notif-row__avatar" src="assets/images/avatar-jacob-thompson.webp" alt=""></a>
+      <div class="notif-row__notif">
+        <p>
+          <a href="#" class="notif-row__name">Jacob Thompson</a> has joined your group
+          <a href="#" class="notif-row__group">Chess Club</a>
+          <span class="notif-row__dot"></span>
+        </p>
+        <p>1 day ago</p>
+      </div>
+    </div> <!-- </div> END OF NOTIF ROW 3 -->
+
+    <!-- NOTIF ROW 4 -->
+    <div class="notif-row">
+      <a href="#"><img class="notif-row__avatar" src="assets/images/avatar-rizky-hasanuddin.webp" alt=""></a>
+      <div class="notif-row__notif">
+        <p>
+          <a href="#" class="notif-row__name">Rizky Hasanuddin</a> sent you a private message
+          <span class="notif-row__dot notif-row__dot--hidden"></span>
+        </p>
+        <p>5 days ago</p>
+      </div>
+      <div class="notif-row__msg-box">
+        <p class="notif-row__msg">
+          Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+          I'm already having lots of fun and improving my game.
+        </p>
+      </div>
+    </div><!-- </div> END OF NOTIF ROW 4 -->
+
+    <!-- NOTIF ROW 5 -->
+    <div class="notif-row">
+      <a href="#"><img class="notif-row__avatar" src="assets/images/avatar-kimberly-smith.webp" alt=""></a>
+      <div class="notif-row__notif notif-row__notif--with-img-prev">
+        <p>
+          <a href="#" class="notif-row__name">Kimberly Smith</a> commented on your picture
+          <span class="notif-row__dot notif-row__dot--hidden"></span>
+        </p>
+        <p>1 week ago</p>
+      </div>
+      <a href="#"><img class="notif-row__img-prev" src="assets/images/image-chess.webp" alt=""></a>
+    </div> <!-- </div> END OF NOTIF ROW 5 -->
+
+    <!-- NOTIF ROW 6 -->
+    <div class="notif-row">
+      <a href="#"><img class="notif-row__avatar" src="assets/images/avatar-mark-webber.webp" alt=""></a>
+      <div class="notif-row__notif">
+        <p>
+          <a href="#" class="notif-row__name">Nathan Peterson</a> reacted to your recent post
+          <a href="#" class="notif-row__post">5 end-game strategies to increase your win rate</a>
+          <span class="notif-row__dot notif-row__dot--hidden"></span>
+        </p>
+        <p>2 weeks ago</p>
+      </div>
+    </div> <!-- </div> END OF NOTIF ROW 6 -->
+
+        <!-- NOTIF ROW 7 -->
+        <div class="notif-row">
+          <a href="#"><img class="notif-row__avatar" src="assets/images/avatar-anna-kim.webp" alt=""></a>
+          <div class="notif-row__notif">
+            <p>
+              <a href="#" class="notif-row__name">Anna Kim</a> left the group
+              <a href="#" class="notif-row__group">Chess Club</a>
+              <span class="notif-row__dot notif-row__dot--hidden"></span>
+            </p>
+            <p>2 weeks ago</p>
+          </div>
+        </div> <!-- </div> END OF NOTIF ROW 7 -->
+
+  </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="public/scripts.js"></script>
+</body>
+
+</html>
